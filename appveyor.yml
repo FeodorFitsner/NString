@@ -4,7 +4,8 @@ image: Visual Studio 2017
 build_script:
 - ps: .\build.ps1
 
-test: off
+test_script:
+- dotnet test %appveyor_build_folder%\NString.Tests\bin\Release\net461\NString.Tests.dll
 
 environment:
   matrix:
