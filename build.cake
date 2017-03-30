@@ -38,7 +38,8 @@ Task("JustTest")
         DotNetCoreTest(testProject, new DotNetCoreTestSettings
         {
             Configuration = configuration,
-            Framework = EnvironmentVariable("test_framework")
+            Framework = EnvironmentVariable("test_framework"),
+            Verbose = true
         });
     });
     
