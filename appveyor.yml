@@ -8,5 +8,5 @@ test: off
 
 environment:
   matrix:
-    - test_framework: netcoreapp1.0
+#    - test_framework: netcoreapp1.0
     - test_framework: net461
